@@ -39,8 +39,6 @@ class Player(GameSprite):
             self.rect.y += self.speed
 class Enemy(GameSprite):
     def update(self):
-        self.rect.y += self.speed
-        global lost
         if self.rect.y>=win_height:
             self.rect.x = randint(50,650)
             
